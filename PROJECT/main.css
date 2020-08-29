@@ -1,0 +1,398 @@
+/* Chargement du Font */
+@font-face {
+    font-family: MyFont;
+    src: url('HelveticaNeueLTStdCn.woff')
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #4facdb;
+}
+
+/* Squellette du site */
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1.3fr;
+    grid-template-columns: 100 100 100;
+    grid-template-areas:
+    "top top top"
+    "center center center"
+    "foot foot foot"
+;
+}
+
+.top {
+    grid-area: top;
+    font-family: MyFont;
+    overflow: hidden;
+}
+
+.foot {
+    grid-area: foot;
+    text-align: center;
+    overflow: hidden;
+}
+
+.center {
+    font-family: MyFont;
+    grid-area: center;
+    overflow: hidden;
+}
+/* Squellette du site */
+
+.container video {
+    width: 100%;
+    height: auto;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Animation du logo */
+.logo {
+    width: 30%; 
+    height: 30%;
+    left: 35%;
+    top: 5%;
+    position: absolute;
+    -webkit-transition-property: width height left top;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    transition-property: width height left top;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.logo1 {
+    width: 20%; 
+    height: 20%;
+    left: 5%;
+    top: 2%;
+    position: absolute;
+    -webkit-transition-property: width height left top;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    transition-property: width height left top;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+/* Animation du logo */
+
+/* Text#1 */
+.text1 {
+    left: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 190%;
+    letter-spacing: 2px;
+    color: white;
+    animation: mymove1st 2.7s 1;
+    animation-fill-mode: forwards;
+}
+
+.text2 {
+    left: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 190%;
+    letter-spacing: 2px;
+    color: white;
+    animation: mymove1st 2.7s 1;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.text3 {
+    left: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 210%;
+    letter-spacing: 2px;
+    color: white;
+    animation: mymove1st 2.7s 1;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+
+}
+/* Text#1 */
+
+/* Text#2 */
+.text4 {
+    top: 40%;
+    left: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 230%;
+    letter-spacing: 2px;
+    color: white;
+    animation: mymove1st 2.7s 1;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.text5 {
+    text-align: center;
+    top: 40%;
+    left: 100%;
+    font-size: 230%;
+    letter-spacing: 2px;
+    color: white;
+    position: relative;
+    animation: mymove1st 2.7s 1;
+    animation-delay: 2.7s;
+    animation-fill-mode: forwards;
+
+}
+
+.text6 {
+    left: 100%;
+    top: -40%;
+    position: relative;
+    text-align: center;
+    font-size: 160%;
+    letter-spacing: 2px;
+    color: white;
+    animation: mymove1st 2.7s 1;
+    animation-delay: 2.9s;
+    animation-fill-mode: forwards;
+}
+
+.text7 {
+    left: 100%;
+    top: -41%;
+    position: relative;
+    font-weight: bold;
+    text-align: center;
+    font-size: 400%;
+    letter-spacing: 2px;
+    color: white;
+    animation: mymove1st 2.7s 1;
+    animation-delay: 3.1s;
+    animation-fill-mode: forwards;
+}
+
+.text8 {
+    margin: 1%;
+    left: 0%;
+    top: -27%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    font-size: 55%;
+    letter-spacing: 1px;
+    color: white;
+    opacity: 0;
+    animation: myopacity 8s 1;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+}
+/* Text#2 */
+
+/* Text#3 */
+.text9 {
+    left: 100%;
+    top: -130%;
+    letter-spacing: 2px;
+    font-size: 210%;
+    text-align: center;
+    position: relative;
+    color: white;
+    animation: mymove1st 2.7s 1;
+    animation-delay: 5.5s;
+    animation-fill-mode: forwards;
+}
+
+.text10 {
+    left: 100%;
+    top: -135%;
+    letter-spacing: 2px;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: white;
+    animation: mymove1st 2.7s 1;
+    animation-delay: 5.7s;
+    animation-fill-mode: forwards;
+}
+
+.text11 {
+    left: 100%;
+    top: -135%;
+    letter-spacing: 2px;
+    font-size: 210%;
+    text-align: center;
+    position: relative;
+    color: white;
+    animation: mymove1st 2.7s 1;
+    animation-delay: 5.9s;
+    animation-fill-mode: forwards;
+
+}
+
+.text12 {
+    left: 100%;
+    top: -140%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 300%;
+    text-align: center;
+    position: relative;
+    color: white;
+    animation: mymove1st 2.7s 1;
+    animation-delay: 6.1s;
+    animation-fill-mode: forwards;
+}
+/* Text#3 */
+
+/* Text#4 */
+.text13 {
+    left: 0%;
+    top: -220%;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    position: relative;
+    opacity: 0;
+    animation: mylastopacity 2s 1;
+    animation-delay: 8.6s;
+    animation-fill-mode: forwards;
+}
+
+.text14 {
+    left: 0%;
+    top: -220%;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    position: relative;
+    opacity: 0;
+    animation: mylastopacity 2s 1;
+    animation-delay: 8.8s;
+    animation-fill-mode: forwards;
+}
+
+.text15 {
+    left: 0%;
+    top: -220%;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+    position: relative;
+    opacity: 0;
+    animation: mylastopacity 2s 1;
+    animation-delay: 9.1s;
+    animation-fill-mode: forwards;
+}
+/* Text#4 */
+
+/* Image "me rendre en magasin" */
+.find {
+    left: 20%;
+    top: 45%;
+    position: absolute;
+    opacity: 0;
+    animation: mylastopacity 2s 1;
+    animation-delay: 9.3s;
+    animation-fill-mode: forwards;
+}
+
+/* Google map API */
+#map {
+    top: 0%;
+    animation: movemap 1s 1;
+    animation-delay: 9.1s;
+    animation-fill-mode: forwards;
+}
+
+/* Animation objet bas vers le haut (Map) */
+@keyframes movemap {
+    from {top: 0%}
+    to {top: -140%}
+
+}
+
+/* Animation objet gauche vers la droite (Text) */
+@keyframes mymove1st {
+    0% {
+        left: 100%;
+        opacity: 1;
+    }
+
+    25% {
+        left: 0%;
+        opacity:1;
+    }
+
+    45% {
+        left: 0%;
+        opacity:1;
+    }
+
+    75% {
+        left: 0%;
+        opacity:1;
+    }
+
+    100% {
+        left: 0%;
+        opacity:0;
+    }
+}
+
+/* Fade-in-out Animation (Text) */
+@keyframes myopacity {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity:0;
+    }
+
+    25% {
+        opacity:1;
+    }
+
+    75% {
+        opacity:1;
+    }
+
+    85% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:0;
+    }
+}
+
+/* Fade-in Animation (Text) */
+@keyframes mylastopacity {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity:0;
+    }
+
+    25% {
+        opacity:1;
+    }
+
+    75% {
+        opacity:1;
+    }
+
+    85% {
+        opacity:1;
+    }
+
+    100% {
+        opacity:1;
+    }
+}

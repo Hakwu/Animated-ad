@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+         content="width=device-width,
+         initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible"
+         content="ie=edge">
+      <title>Document</title>
+      <link rel="stylesheet"
+         href="main.css">
+   </head>
+   <body>
+      <script src="script.js"></script>
+      <div class="container">
+         <div class="top">
+            <div class="logo">
+               <img src="logo.PNG">
+            </div>
+            <div class="text4">AVEC</div>
+            <div class="text5">LE PACK KONNECTÉ</div>
+         </div>
+         <div class="center">
+            <div class="text1">PRÊTS</br></div>
+            <div class="text2">POUR LA RENTRÉE </div>
+            <div class="text3">DES SÉRIES ?</div>
+            <div class="text6">À PARTIR DE</br></div>
+            <div class="text7">99€*</div>
+            <div class="text8">* Prix de vente TTC conseillé en magasin. ** Du 24/08/2017 au 31/10/2017
+               </br>Voir conditions complètes sur <U>krys.com/offre-rentree-2017</U>
+               </br>Dispositif médical. Consultez un professionnel de santé.
+            </div>
+            <div class="text9">2 PAIRES À LA VUE :</div>
+            <div class="text10">1 OPTIQUE</br></div>
+            <div class="text11">ANTI-LUMIÈRE BLEUE</br></div>
+            <div class="text12">+ 1 SOLAIRE**</div>
+            <div class="text13">KRYS PALAISEAU - PARIS</div>
+            <div class="text14">55 RUE DE PARIS</div>
+            <div class="text15">91120 PALAISEAU</div>
+            <div class="find">
+               <img src="metrouver.PNG">
+            </div>
+         </div>
+         <div class="foot">
+            <video autoplay loop muted>
+                <source src="boucle.mp4" type="video/mp4">
+            </video>
+            <style>
+                #map {
+                    height: 30em;
+                    width: 100%;
+                }
+            </style>
+            <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var location = {lat: 48.7162164, lng: 2.2469828};
+                var map = new
+                google.maps.Map(document.getElementById("map"), {
+                    zoom: 16,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                })
+            }
+                </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwWo99BF1Wg9Qu7nCU6Be7pHoVnweFWos&callback=initMap"></script>
+            </div>
+         </div>
+      </div>
+   </body>
+</hmtl>
